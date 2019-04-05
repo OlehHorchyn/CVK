@@ -8,9 +8,18 @@ namespace Project1_Train_CVK_Scrapper.Models
 {
     class TerretoryOkrug
     {
-        public int Id { set; get; }
+        public string Id { set; get; }
         public int Total { set; get; }
         public int Processed { set; get; }
         public string Description { set; get; }
+        public List<Department> departments = new List<Department>();
+
+        public TerretoryOkrug(string id, int total, int processed, string description)
+        {
+            Id = id;
+            Total = total;
+            Processed = processed;
+            Description = description;
+        }
     }
 }

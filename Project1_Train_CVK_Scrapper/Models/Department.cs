@@ -8,7 +8,7 @@ namespace Project1_Train_CVK_Scrapper.Models
 {
     class Department
     {
-        public int Id { set; get; }
+        public string Id { set; get; }
         public int TotalRecievedBul { set; get; }
         public int NumberOfVotersIncluded { set; get; }
         public int NumberOfVotersIncludedPlace { set; get; }
@@ -58,6 +58,61 @@ namespace Project1_Train_CVK_Scrapper.Models
         public int TymoshenkoYurii { set; get; }
         public int ShewchenkoIgor { set; get; }
         public int ShewchenkoOleksandr { set; get; }
-        public string date { set; get; }
+        public string Date { set; get; }
+
+        public Department(string id, int totalRecievedBul, int numberOfVotersIncluded, int numberOfVotersIncludedPlace, int numberOfUnusedBul, int numberOfVotersRecievedIndoors, int numberOfVotersRecievedAtPlace, int totalNumberVoters, int numberOfBulNotConsider, int totalNumberVotersVoting, int numberOfBulInvalid, int balshowGenadiy, int bezsmertniyRoman, int bogomoletzOlga, int bogoslovskaInna, int boykoYrii, int bondarViktor, int vaschenkoOleksandr, int vilkulOleksandr, int gaberMykola, int grytsenkoAnatoliy, int danulyukOleksandr, int derevyankoYrii, int zhuravlyovVasyl, int zelenskiyVolodymr, int kaplinSergiy, int karmazinYrii, int kyvaIlya, int cornatskiyArkadiy, int koshylunskiyRuslan, int kruvenkoViktor, int kupriyVitaliy, int lytvynenkoYlia, int lyashkoOleg, int morozOleksandr, int naluvaichenkoValentin, int nasirovRoman, int novakAndriy, int nosenkoSergiy, int petrovVolodymyr, int poroshenkoPetro, int rigovanowRuslan, int skotsukVitaliy, int smeshkoIgor, int solovyowOleksandr, int tarutaSergiy, int tymoshenkoYulia, int tymoshenkoYurii, int shewchenkoIgor, int shewchenkoOleksandr, string date)
+        {
+            Id = id;
+            TotalRecievedBul = totalRecievedBul;
+            NumberOfVotersIncluded = numberOfVotersIncluded;
+            NumberOfVotersIncludedPlace = numberOfVotersIncludedPlace;
+            NumberOfUnusedBul = numberOfUnusedBul;
+            NumberOfVotersRecievedIndoors = numberOfVotersRecievedIndoors;
+            NumberOfVotersRecievedAtPlace = numberOfVotersRecievedAtPlace;
+            TotalNumberVoters = totalNumberVoters;
+            NumberOfBulNotConsider = numberOfBulNotConsider;
+            TotalNumberVotersVoting = totalNumberVotersVoting;
+            NumberOfBulInvalid = numberOfBulInvalid;
+            BalshowGenadiy = balshowGenadiy;
+            BezsmertniyRoman = bezsmertniyRoman;
+            BogomoletzOlga = bogomoletzOlga;
+            BogoslovskaInna = bogoslovskaInna;
+            BoykoYrii = boykoYrii;
+            BondarViktor = bondarViktor;
+            VaschenkoOleksandr = vaschenkoOleksandr;
+            VilkulOleksandr = vilkulOleksandr;
+            GaberMykola = gaberMykola;
+            GrytsenkoAnatoliy = grytsenkoAnatoliy;
+            DanulyukOleksandr = danulyukOleksandr;
+            DerevyankoYrii = derevyankoYrii;
+            ZhuravlyovVasyl = zhuravlyovVasyl;
+            ZelenskiyVolodymr = zelenskiyVolodymr;
+            KaplinSergiy = kaplinSergiy;
+            KarmazinYrii = karmazinYrii;
+            KyvaIlya = kyvaIlya;
+            CornatskiyArkadiy = cornatskiyArkadiy;
+            KoshylunskiyRuslan = koshylunskiyRuslan;
+            KruvenkoViktor = kruvenkoViktor;
+            KupriyVitaliy = kupriyVitaliy;
+            LytvynenkoYlia = lytvynenkoYlia;
+            LyashkoOleg = lyashkoOleg;
+            MorozOleksandr = morozOleksandr;
+            NaluvaichenkoValentin = naluvaichenkoValentin;
+            NasirovRoman = nasirovRoman;
+            NovakAndriy = novakAndriy;
+            NosenkoSergiy = nosenkoSergiy;
+            PetrovVolodymyr = petrovVolodymyr;
+            PoroshenkoPetro = poroshenkoPetro;
+            RigovanowRuslan = rigovanowRuslan;
+            SkotsukVitaliy = skotsukVitaliy;
+            SmeshkoIgor = smeshkoIgor;
+            SolovyowOleksandr = solovyowOleksandr;
+            TarutaSergiy = tarutaSergiy;
+            TymoshenkoYulia = tymoshenkoYulia;
+            TymoshenkoYurii = tymoshenkoYurii;
+            ShewchenkoIgor = shewchenkoIgor;
+            ShewchenkoOleksandr = shewchenkoOleksandr;
+            Date = date;
+        }
     }
 }

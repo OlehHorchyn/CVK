@@ -8,9 +8,15 @@ namespace Project1_Train_CVK_Scrapper.Models
 {
     class Region
     {
-        public int Id { set; get; }
         public string RegionName { set; get; }
 
         public int Count { set; get; }
+        public List<TerretoryOkrug> okrugs = new List<TerretoryOkrug>();
+
+        public Region(string regionName, int count)
+        {
+            RegionName = regionName;
+            Count = count;
+        }
     }
 }
