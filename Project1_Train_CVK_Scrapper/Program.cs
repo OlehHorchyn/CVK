@@ -2,13 +2,10 @@
 using Newtonsoft.Json;
 using Project1_Train_CVK_Scrapper.Models;
 using System;
-using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Project1_Train_CVK_Scrapper
 {
@@ -22,8 +19,10 @@ namespace Project1_Train_CVK_Scrapper
 
             GetHtmlAsyncHref();
 
-            Console.WriteLine(JsonConvert.SerializeObject(regions));
+            File.WriteAllText(@"D:\C# Projects\cvk.json", JsonConvert.SerializeObject(regions, Formatting.Indented));
 
+
+            Console.WriteLine("End");
             Console.ReadLine();
         }
 
