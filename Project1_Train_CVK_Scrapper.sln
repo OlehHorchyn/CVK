@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project1_Train_CVK_Scrapper", "Project1_Train_CVK_Scrapper\Project1_Train_CVK_Scrapper.csproj", "{0E8B9C82-8D2C-4948-A7B7-D33CF807358A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1_CVK", "ClassLibrary1_CVK\ClassLibrary1_CVK.csproj", "{CB72066E-2714-4DD4-B718-3E14C8CB2511}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0E8B9C82-8D2C-4948-A7B7-D33CF807358A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E8B9C82-8D2C-4948-A7B7-D33CF807358A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E8B9C82-8D2C-4948-A7B7-D33CF807358A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB72066E-2714-4DD4-B718-3E14C8CB2511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB72066E-2714-4DD4-B718-3E14C8CB2511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB72066E-2714-4DD4-B718-3E14C8CB2511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB72066E-2714-4DD4-B718-3E14C8CB2511}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

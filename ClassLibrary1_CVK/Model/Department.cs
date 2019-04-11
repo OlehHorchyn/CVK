@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project1_Train_CVK_Scrapper.Models
+namespace ClassLibrary1_CVK.Model
 {
-    class Department
+    public class Department
     {
         public string Id { set; get; }
         public int TotalRecievedBul { set; get; }
@@ -59,6 +59,7 @@ namespace Project1_Train_CVK_Scrapper.Models
         public int ShewchenkoIgor { set; get; }
         public int ShewchenkoOleksandr { set; get; }
         public string Date { set; get; }
+        public int DepHashCode { set; get; }
 
         public Department(string id, int totalRecievedBul, int numberOfVotersIncluded, int numberOfVotersIncludedPlace, int numberOfUnusedBul, int numberOfVotersRecievedIndoors, int numberOfVotersRecievedAtPlace, int totalNumberVoters, int numberOfBulNotConsider, int totalNumberVotersVoting, int numberOfBulInvalid, int balshowGenadiy, int bezsmertniyRoman, int bogomoletzOlga, int bogoslovskaInna, int boykoYrii, int bondarViktor, int vaschenkoOleksandr, int vilkulOleksandr, int gaberMykola, int grytsenkoAnatoliy, int danulyukOleksandr, int derevyankoYrii, int zhuravlyovVasyl, int zelenskiyVolodymr, int kaplinSergiy, int karmazinYrii, int kyvaIlya, int cornatskiyArkadiy, int koshylunskiyRuslan, int kruvenkoViktor, int kupriyVitaliy, int lytvynenkoYlia, int lyashkoOleg, int morozOleksandr, int naluvaichenkoValentin, int nasirovRoman, int novakAndriy, int nosenkoSergiy, int petrovVolodymyr, int poroshenkoPetro, int rigovanowRuslan, int skotsukVitaliy, int smeshkoIgor, int solovyowOleksandr, int tarutaSergiy, int tymoshenkoYulia, int tymoshenkoYurii, int shewchenkoIgor, int shewchenkoOleksandr, string date)
         {
@@ -113,6 +114,71 @@ namespace Project1_Train_CVK_Scrapper.Models
             ShewchenkoIgor = shewchenkoIgor;
             ShewchenkoOleksandr = shewchenkoOleksandr;
             Date = date;
+            DepHashCode = GetHashCode();
+        }
+
+        
+        public override int GetHashCode()
+        {
+            var hashCode = -1171506039;
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Id);
+            hashCode = hashCode * -1521134295 + TotalRecievedBul.GetHashCode();
+            hashCode = hashCode * -1521134295 + NumberOfVotersIncluded.GetHashCode();
+            hashCode = hashCode * -1521134295 + NumberOfVotersIncludedPlace.GetHashCode();
+            hashCode = hashCode * -1521134295 + NumberOfUnusedBul.GetHashCode();
+            hashCode = hashCode * -1521134295 + NumberOfVotersRecievedIndoors.GetHashCode();
+            hashCode = hashCode * -1521134295 + NumberOfVotersRecievedAtPlace.GetHashCode();
+            hashCode = hashCode * -1521134295 + TotalNumberVoters.GetHashCode();
+            hashCode = hashCode * -1521134295 + NumberOfBulNotConsider.GetHashCode();
+            hashCode = hashCode * -1521134295 + TotalNumberVotersVoting.GetHashCode();
+            hashCode = hashCode * -1521134295 + NumberOfBulInvalid.GetHashCode();
+            hashCode = hashCode * -1521134295 + BalshowGenadiy.GetHashCode();
+            hashCode = hashCode * -1521134295 + BezsmertniyRoman.GetHashCode();
+            hashCode = hashCode * -1521134295 + BogomoletzOlga.GetHashCode();
+            hashCode = hashCode * -1521134295 + BogoslovskaInna.GetHashCode();
+            hashCode = hashCode * -1521134295 + BoykoYrii.GetHashCode();
+            hashCode = hashCode * -1521134295 + BondarViktor.GetHashCode();
+            hashCode = hashCode * -1521134295 + VaschenkoOleksandr.GetHashCode();
+            hashCode = hashCode * -1521134295 + VilkulOleksandr.GetHashCode();
+            hashCode = hashCode * -1521134295 + GaberMykola.GetHashCode();
+            hashCode = hashCode * -1521134295 + GrytsenkoAnatoliy.GetHashCode();
+            hashCode = hashCode * -1521134295 + DanulyukOleksandr.GetHashCode();
+            hashCode = hashCode * -1521134295 + DerevyankoYrii.GetHashCode();
+            hashCode = hashCode * -1521134295 + ZhuravlyovVasyl.GetHashCode();
+            hashCode = hashCode * -1521134295 + ZelenskiyVolodymr.GetHashCode();
+            hashCode = hashCode * -1521134295 + KaplinSergiy.GetHashCode();
+            hashCode = hashCode * -1521134295 + KarmazinYrii.GetHashCode();
+            hashCode = hashCode * -1521134295 + KyvaIlya.GetHashCode();
+            hashCode = hashCode * -1521134295 + CornatskiyArkadiy.GetHashCode();
+            hashCode = hashCode * -1521134295 + KoshylunskiyRuslan.GetHashCode();
+            hashCode = hashCode * -1521134295 + KruvenkoViktor.GetHashCode();
+            hashCode = hashCode * -1521134295 + KupriyVitaliy.GetHashCode();
+            hashCode = hashCode * -1521134295 + LytvynenkoYlia.GetHashCode();
+            hashCode = hashCode * -1521134295 + LyashkoOleg.GetHashCode();
+            hashCode = hashCode * -1521134295 + MorozOleksandr.GetHashCode();
+            hashCode = hashCode * -1521134295 + NaluvaichenkoValentin.GetHashCode();
+            hashCode = hashCode * -1521134295 + NasirovRoman.GetHashCode();
+            hashCode = hashCode * -1521134295 + NovakAndriy.GetHashCode();
+            hashCode = hashCode * -1521134295 + NosenkoSergiy.GetHashCode();
+            hashCode = hashCode * -1521134295 + PetrovVolodymyr.GetHashCode();
+            hashCode = hashCode * -1521134295 + PoroshenkoPetro.GetHashCode();
+            hashCode = hashCode * -1521134295 + RigovanowRuslan.GetHashCode();
+            hashCode = hashCode * -1521134295 + SkotsukVitaliy.GetHashCode();
+            hashCode = hashCode * -1521134295 + SmeshkoIgor.GetHashCode();
+            hashCode = hashCode * -1521134295 + SolovyowOleksandr.GetHashCode();
+            hashCode = hashCode * -1521134295 + TarutaSergiy.GetHashCode();
+            hashCode = hashCode * -1521134295 + TymoshenkoYulia.GetHashCode();
+            hashCode = hashCode * -1521134295 + TymoshenkoYurii.GetHashCode();
+            hashCode = hashCode * -1521134295 + ShewchenkoIgor.GetHashCode();
+            hashCode = hashCode * -1521134295 + ShewchenkoOleksandr.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Date);
+            return hashCode;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Department department &&
+                   Id == department.Id;
         }
     }
 }
